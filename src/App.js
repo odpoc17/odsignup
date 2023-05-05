@@ -12,7 +12,7 @@ import PortalPage from './pages/PortalPage/PortalPage';
 const routes = [
   {
     path: "/bpsignup",
-    element: <HomePage />,
+    element: <HomePage />
   },
   {
     path: "/register",
