@@ -1,6 +1,6 @@
 {
   "name": "cloud_data_services",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://bpdemo2030.github.io/bpsignup",
   "private": true,
   "dependencies": {
