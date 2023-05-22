@@ -18,7 +18,7 @@ const defaultFormData = {
   state: "",
   city: "",
   addr1: "",
-  zip: ""
+  zip: "",
 };
 
 const formSteps = {
@@ -38,7 +38,7 @@ const PaymentForm = ({ plan }) => {
   const buildPaymentForm = (hostedPaymentPageExternalId) => {
     const script = document.createElement("script");
     script.src =
-      "https://cdn.aws.billingplatform.com/hosted-payments-ui@1/lib.js";
+      "https://cdn.aws.billingplatform.com/hosted-payments-ui@release/lib.js";
     document.body.append(script);
     script.onload = function () {
       window.HostedPayments.renderPaymentForm(
@@ -54,6 +54,12 @@ const PaymentForm = ({ plan }) => {
           },
           environmentId: "379d372b-8406-4599-8f74-bc283342c5a5",
           billingProfileId: hostedPaymentPageExternalId,
+          fullName: `${formData.firstName} ${formData.lastName}`,
+          state: formData.state,
+          city: formData.city,
+          address: formData.addr1,
+          zip: formData.zip,
+          email: formData.email,
         },
         {
           successCapture: () => navigate("/portal"),

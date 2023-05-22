@@ -28,12 +28,11 @@ const getSelectedPlan = (plans) => {
 };
 
 const RegisterPage = () => {
-
   const [selectedPlan, setSelectedPlan] = useState(null);
   const [allowForm, setAllowForm] = useState(false);
 
   useEffect(() => {
-    getProducts().then(data => {
+    getProducts().then((data) => {
       setSelectedPlan(getSelectedPlan(data));
     });
   }, []);
@@ -51,7 +50,9 @@ const RegisterPage = () => {
               <div className="flex column">
                 <div className="flex w-full justify-between">
                   <span>{selectedPlan?.fullTitle || selectedPlan?.title}</span>
-                  <span>{selectedPlan?.currencySign} {selectedPlan?.price}</span>
+                  <span>
+                    {selectedPlan?.currencySign} {selectedPlan?.price}
+                  </span>
                 </div>
                 <div className="flex w-full justify-between">
                   <span>Tax</span>
@@ -59,7 +60,9 @@ const RegisterPage = () => {
                 </div>
                 <div className="flex w-full justify-between total-block">
                   <span>Total</span>
-                  <span>{selectedPlan?.currencySign} {selectedPlan?.price}</span>
+                  <span>
+                    {selectedPlan?.currencySign} {selectedPlan?.price}
+                  </span>
                 </div>
                 {/* {selectedPlan?.description?.map((item) => (
                 <div className="flex" key={item}>
@@ -67,13 +70,35 @@ const RegisterPage = () => {
                   <span>{item}</span>
                 </div>
               ))} */}
-                <span className="card-label">Your card will be charged on {paymentDate.toLocaleDateString("en", { year: 'numeric', month: 'long', day: 'numeric' })}. You can cancel anytime before that.</span>
+                <span className="card-label">
+                  Your card will be charged on{" "}
+                  {paymentDate.toLocaleDateString("en", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                  . You can cancel anytime before that.
+                </span>
 
                 <div className="terms-block">
                   <h4>Terms & Conditions</h4>
                   <div className="flex">
-                    <input type="checkbox" checked={allowForm} onChange={e => setAllowForm(e.target.checked)} />
-                    <span className="terms-text">I have read and agree to the <a className="terms" href="https://billingplatform.com/terms-of-use" target="_blank" rel="noreferrer">Terms of use</a></span>
+                    <input
+                      type="checkbox"
+                      checked={allowForm}
+                      onChange={(e) => setAllowForm(e.target.checked)}
+                    />
+                    <span className="terms-text">
+                      I have read and agree to the{" "}
+                      <a
+                        className="terms"
+                        href="https://billingplatform.com/terms-of-use"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Terms of use
+                      </a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -81,10 +106,22 @@ const RegisterPage = () => {
             <div className="businesses">
               <h3>Trusted by leading businesses</h3>
               <div className="list flex justify-between w-full">
-                <img src="./emburse-logo.png" alt="emburse-logo" />
-                <img src="./go-cardless-logo.png" alt="go-cardless-logo" />
-                <img src="./jpmc-logo.png" alt="jpmc-logo" />
-                <img src="./thunes-logo.png" alt="thunes-logo" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/emburse-logo.png`}
+                  alt="emburse-logo"
+                />
+                <img
+                  src={`${process.env.PUBLIC_URL}/go-cardless-logo.png`}
+                  alt="go-cardless-logo"
+                />
+                <img
+                  src={`${process.env.PUBLIC_URL}/jpmc-logo.png`}
+                  alt="jpmc-logo"
+                />
+                <img
+                  src={`${process.env.PUBLIC_URL}/thunes-logo.png`}
+                  alt="thunes-logo"
+                />
               </div>
               <div className="secondary-text">
                 voluptatem accusantium doloremque laudantium, totam rem aperiam

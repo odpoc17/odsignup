@@ -36,7 +36,12 @@ const HomePage = () => {
                   <Card key={item.id}>
                     <div className="flex column text-center">
                       <div className="flex justify-center plan-logo">
-                        <img src={`/Plan-${index + 1}.png`} alt="plan" />
+                        <img
+                          src={`${process.env.PUBLIC_URL}/Plan-${
+                            index + 1
+                          }.png`}
+                          alt="plan"
+                        />
                       </div>
                       <h4 className="card-title">{item.title}</h4>
                       <h2 className="card-price">
@@ -67,7 +72,7 @@ const HomePage = () => {
                         {item.description.map((desc) => (
                           <div key={desc} className="flex description">
                             <img
-                              src="/Check-icon.png"
+                              src={`${process.env.PUBLIC_URL}/Check-icon.png`}
                               className="check"
                               alt="check"
                             />
@@ -82,7 +87,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      <Footer/>
+        <Footer />
       </div>
       {/* <div className="home-background"></div> */}
       {/* <div className="home-cloud-data-icon"></div> */}
