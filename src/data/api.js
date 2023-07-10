@@ -145,7 +145,7 @@ export const getProducts = async () => {
       return JSON.parse(cachedProducts);
     }
     const productResponse = await fetch(
-      `${process.env.REACT_APP_BP_URL}/query?sql=SELECT Name, Id FROM Product WHERE Name IN ('Cloud Data Standard Trial','Cloud Data Premium Trial')`,
+      `${process.env.REACT_APP_BP_URL}/query?sql=SELECT Name, Id FROM Product WHERE Name IN ('Enterprise - Projects','Enterprise - Projects')`,
       { headers: { sessionId } }
     ).then((resp) => resp.json());
     const products = productResponse?.queryResponse;

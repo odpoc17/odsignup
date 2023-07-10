@@ -1,13 +1,13 @@
 {
   "name": "cloud_data_services",
   "version": "0.1.1",
-  "homepage": "https://bpdemo2030.github.io/bpsignup",
+  "homepage": "https://odpoc17.github.io/odsignup",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.4.2",
