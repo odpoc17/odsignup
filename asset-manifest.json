@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/odsignup/static/css/main.f5cee1d6.css",
-    "main.js": "/odsignup/static/js/main.50d2d9c5.js",
+    "main.js": "/odsignup/static/js/main.4a3e9a78.js",
     "static/js/787.086e63fa.chunk.js": "/odsignup/static/js/787.086e63fa.chunk.js",
     "static/media/Home-background.png": "/odsignup/static/media/Home-background.4964678d78c2e1346910.png",
     "static/media/register-background.png": "/odsignup/static/media/register-background.8e014dc3a08790817a40.png",
     "static/media/home-page-cloud-data.png": "/odsignup/static/media/home-page-cloud-data.5a2fc7e2abc3f26d4db0.png",
     "index.html": "/odsignup/index.html",
     "main.f5cee1d6.css.map": "/odsignup/static/css/main.f5cee1d6.css.map",
-    "main.50d2d9c5.js.map": "/odsignup/static/js/main.50d2d9c5.js.map",
+    "main.4a3e9a78.js.map": "/odsignup/static/js/main.4a3e9a78.js.map",
     "787.086e63fa.chunk.js.map": "/odsignup/static/js/787.086e63fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f5cee1d6.css",
-    "static/js/main.50d2d9c5.js"
+    "static/js/main.4a3e9a78.js"
   ]
 }
