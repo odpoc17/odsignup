@@ -11,7 +11,7 @@ import PortalPage from './pages/PortalPage/PortalPage';
 
 const routes = [
   {
-    path: "/bpsignup",
+    path: "/odsignup",
     element: <HomePage />
   },
   {
